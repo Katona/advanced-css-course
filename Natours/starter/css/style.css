@@ -322,7 +322,8 @@ body {
   background-color: #fff;
   transform: skewX(-12deg);
   box-shadow: rgba(0, 0, 0, 0.1) 3rem 3rem 6rem;
-  border-radius: 3px; }
+  border-radius: 3px;
+  font-size: 1.6rem; }
   .story__shape {
     height: 15rem;
     width: 15rem;
@@ -334,10 +335,27 @@ body {
     transform: translateX(-3rem) skewX(12deg); }
   .story__image {
     height: 100%;
-    shape-outside: circle(50%); }
+    shape-outside: circle(50%);
+    transform: translateX(-3rem) scale(1.4);
+    transition: all 0.5s; }
   .story__text {
-    font-size: 1.6rem;
     transform: skewX(12deg); }
+  .story__caption {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s; }
+  .story:hover .story__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .story:hover .story__image {
+    transform: translateX(-3rem) scale(1.2);
+    filter: blur(1px) brightness(0.8); }
 
 .header {
   position: relative;
