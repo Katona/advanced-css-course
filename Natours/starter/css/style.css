@@ -319,7 +319,7 @@ body {
   margin-right: auto;
   padding: 6rem;
   padding-left: 9rem;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
   transform: skewX(-12deg);
   box-shadow: rgba(0, 0, 0, 0.1) 3rem 3rem 6rem;
   border-radius: 3px;
@@ -357,6 +357,20 @@ body {
   .story:hover .story__image {
     transform: translateX(-3rem) scale(1.2);
     filter: blur(1px) brightness(0.8); }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.15;
+  overflow: hidden;
+  z-index: -1; }
+  .bg-video-content {
+    object-fit: cover;
+    height: 100%;
+    width: 100%; }
 
 .header {
   position: relative;
@@ -399,7 +413,7 @@ body {
   margin-top: -17rem; }
 
 .section-testimonals {
-  background-color: #f7f7f7;
+  position: relative;
   padding: 15rem 0; }
 
 .row {
