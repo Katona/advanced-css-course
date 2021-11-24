@@ -10,6 +10,8 @@
     border-bottom: 3px solid transparent;
     display: block;
     width: 90%;
+    transition: all .3s;
+
     &:focus {
       outline: none;
       box-shadow: $shadow-dark;
