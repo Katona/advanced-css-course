@@ -34,6 +34,15 @@
 html {
   /* Defines 1 rem */
   font-size: 62.5%; }
+  @media screen and (min-width: 112.5em) {
+    html {
+      font-size: 80%; } }
+  @media screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box; }
