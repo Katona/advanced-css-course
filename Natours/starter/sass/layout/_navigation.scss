@@ -12,6 +12,15 @@
     z-index: 2000;
     background-color: $color-white;
     text-align: center;
+
+    @include respond(tab-port) {
+      top: 4rem;
+      right: 4rem;
+    }
+    @include respond(phone) {
+      top: 3rem;
+      right: 3rem;
+    }
   }
   &__background {
     width: 6rem;
@@ -23,6 +32,15 @@
     background-image: radial-gradient($color-primary-light, $color-primary-dark);
     z-index: 1000;
     transition: all 0.3s;
+
+    @include respond(tab-port) {
+      top: 4.5rem;
+      right: 4.5rem;
+    }
+    @include respond(phone) {
+      top: 3.5rem;
+      right: 3.5rem;
+    }
   }
 
   &__nav {
@@ -95,7 +113,7 @@
       width: 3rem;
       height: 2px;
       background-color: $color-black;
-      transition: all .2s;
+      transition: all 0.2s;
     }
     &::before,
     &::after {
@@ -121,7 +139,7 @@
   }
 
   &__checkbox:checked + &__button &__icon {
-    background-color: transparent; 
+    background-color: transparent;
   }
 
   &__checkbox:checked + &__button &__icon::before {
@@ -133,5 +151,4 @@
     top: 0;
     transform: rotate(-135deg);
   }
-
 }
