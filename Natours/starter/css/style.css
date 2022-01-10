@@ -619,7 +619,7 @@ body {
     margin-bottom: 8rem; }
     @media screen and (max-width: 56.25em) {
       .footer__logo-box {
-        margin-bottom: 4rem; } }
+        margin-bottom: 6rem; } }
   .footer__logo {
     width: 15rem; }
   .footer__navigation {
@@ -636,6 +636,9 @@ body {
     display: inline-block; }
     .footer__item:not(:last-child) {
       margin-right: 1.5rem; }
+      @media screen and (max-width: 56.25em) {
+        .footer__item:not(:last-child) {
+          margin-right: 1rem; } }
   .footer__copyright {
     border-top: 1px solid #eee;
     padding-top: 2rem;
