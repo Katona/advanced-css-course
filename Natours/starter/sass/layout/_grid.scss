@@ -22,7 +22,10 @@
     }
     @include respond(tab-port) {
       width: 100% !important;
-      margin-bottom: $gutter-vertical-small;
+
+      &:not(:last-child) {
+        margin-bottom: $gutter-vertical-small;
+      }
     }
   }
 
