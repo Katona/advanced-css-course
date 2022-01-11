@@ -487,6 +487,9 @@ body {
   display: block;
   width: 90%;
   transition: all 0.3s; }
+  @media screen and (max-width: 56.25em) {
+    .form__input {
+      width: 100%; } }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -516,6 +519,10 @@ body {
   width: 49%;
   display: inline-block;
   position: relative; }
+  @media screen and (max-width: 56.25em) {
+    .form__radio-group {
+      width: 100%;
+      margin-bottom: 2rem; } }
 
 .form__radio-input {
   display: none; }
@@ -898,8 +905,19 @@ body {
     background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
     background-size: cover;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-    border-radius: 3px;
-    height: 50rem; }
+    border-radius: 3px; }
+    @media screen and (max-width: 75em) {
+      .section-book .book {
+        background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 70%, transparent 70%), url(../img/nat-10.jpg); } }
+    @media screen and (max-width: 56.25em) {
+      .section-book .book {
+        background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 100%, transparent 100%), url(../img/nat-10.jpg); } }
     .section-book .book__form {
       width: 50%;
       padding: 6rem; }
+      @media screen and (max-width: 75em) {
+        .section-book .book__form {
+          width: 70%; } }
+      @media screen and (max-width: 56.25em) {
+        .section-book .book__form {
+          width: 100%; } }
