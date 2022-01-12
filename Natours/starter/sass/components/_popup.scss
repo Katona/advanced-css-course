@@ -7,7 +7,7 @@
   z-index: 3000;
   opacity: 0;
   visibility: hidden;
-  transition: all .3s;
+  transition: all 0.3s;
 
   &__content {
     @include absCenter;
@@ -18,8 +18,8 @@
     overflow: hidden;
     display: table;
     opacity: 0;
-    transition: all .3s .1s;
-    transform: translate(-50%, -50%) scale(.25); 
+    transition: all 0.3s 0.1s;
+    transform: translate(-50%, -50%) scale(0.25);
   }
 
   &__img {
@@ -30,13 +30,23 @@
   &__left {
     width: 33.333%;
     display: table-cell;
+
+    @include respond(tab-port) {
+      display: none;
+    }
   }
+
   &__right {
     width: 66.6666%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
   }
+
   &__text {
     font-size: 1.4rem;
     padding-bottom: 4rem;
@@ -48,6 +58,11 @@
     column-count: 2;
     column-gap: 4rem;
     column-rule: 1px solid $color-grey-light-2;
+
+    @include respond(phone) {
+      -moz-column-count: 1;
+      column-count: 1;
+    }
 
     -moz-hyphens: auto;
     -ms-hyphens: auto;
