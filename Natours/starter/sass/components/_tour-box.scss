@@ -13,6 +13,7 @@
     top: 0;
     bottom: 0;
     transition: transform 0.8s ease;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 3px;
     box-shadow: $shadow-light;
