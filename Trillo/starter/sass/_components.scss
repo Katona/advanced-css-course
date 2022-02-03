@@ -1,0 +1,23 @@
+.header {
+    .logo {
+        height: 3.25rem;
+    }
+}
+
+
+.user-nav {
+    &__icon {
+        height: 2.25rem;
+    }
+    &__user-photo {
+        height: 3.75rem;
+        border-radius: 50%;
+    }
+}
+
+.search {
+    &__icon {
+        height: 2rem;
+        width: 2rem;
+    }
+}

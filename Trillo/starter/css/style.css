@@ -21,6 +21,20 @@
   background-color: var(--grey-light-3);
   flex: 1; }
 
+.header .logo {
+  height: 3.25rem; }
+
+.user-nav__icon {
+  height: 2.25rem; }
+
+.user-nav__user-photo {
+  height: 3.75rem;
+  border-radius: 50%; }
+
+.search__icon {
+  height: 2rem;
+  width: 2rem; }
+
 /*
 COLORS
 
