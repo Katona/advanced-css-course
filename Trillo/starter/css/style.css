@@ -14,11 +14,15 @@
 .sidebar {
   background-color: var(--grey-dark-1);
   color: #fff;
-  flex: 0 0 18%; }
+  flex: 0 0 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
 
 .hotel-view {
   background-color: var(--grey-light-3);
-  flex: 1; }
+  flex: 1;
+  height: 80rem; }
 
 .header {
   display: flex;
@@ -93,6 +97,16 @@
     background-color: var(--grey-light-3); }
   .search__button {
     border: none; }
+
+.side-nav__icon {
+  width: 1.75rem;
+  height: 1.75rem; }
+
+.side-nav__legal {
+  font-size: 1.2rem;
+  color: var(--grey-light-4);
+  text-align: center;
+  margin-bottom: 2rem; }
 
 /*
 COLORS
