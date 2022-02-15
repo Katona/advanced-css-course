@@ -24,7 +24,6 @@
 }
 
 .hotel-view {
-  background-color: var(--grey-light-3);
   flex: 1;
   height: 80rem;
 }
