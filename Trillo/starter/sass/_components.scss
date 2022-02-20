@@ -238,11 +238,11 @@
   font-size: inherit;
   display: inline-block;
   cursor: pointer;
-  transition: all .2s;
+  transition: all 0.2s;
 
   span {
     margin-left: 2px;
-    transition: margin-left .2s;
+    transition: margin-left 0.2s;
   }
 
   &:hover {
@@ -289,7 +289,7 @@
 
   &__item {
     flex: 0 0 50%;
-    margin-bottom: .75rem;
+    margin-bottom: 0.75rem;
   }
 
   &__item::before {
@@ -298,7 +298,7 @@
     width: 1rem;
     margin-right: 0.5rem;
     display: inline-block;
-    
+
     background-color: var(--primary);
     -webkit-mask-image: url(../img/chevron-thin-right.svg);
     -webkit-mask-size: cover;
@@ -339,7 +339,7 @@
   box-shadow: var(--shadow-light);
   position: relative;
   overflow: hidden;
-  
+
   &__text {
     margin-bottom: 2rem;
     z-index: 10;
@@ -379,11 +379,66 @@
     content: "\201C";
     position: absolute;
     top: -2.6rem;
-    left: -.8rem;
+    left: -0.8rem;
     font-size: 20rem;
     line-height: 1;
     font-family: sans-serif;
     color: var(--grey-light-2);
     z-index: 1;
+  }
+}
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+
+  &__text {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 3.5rem;
+  }
+}
+.btn {
+  font-size: 1.4rem;
+  border: none;
+  margin-bottom: 3rem;
+  background-image: linear-gradient(to right, var(--primary-dark), var(--primary-light));
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 100px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  & > * {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    transition: all .2s;
+  }
+
+  &__visible {
+    padding: 2rem 7.5rem;
+  }
+  &__invisible {
+    padding: 2rem 0rem;
+    position: absolute;
+    left: 0;
+    top: -100%;
+  }
+
+  &:hover &__invisible {
+    top: 0;
+  }
+  &:hover &__visible {
+    transform: translateY(100%);
+  }
+  &:hover {
+    background-image: linear-gradient(to left, var(--primary-dark), var(--primary-light));
+  }
+  &:focus {
+    outline: none;
+    animation: pulsate 1s infinite;
   }
 }
