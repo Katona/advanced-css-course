@@ -120,8 +120,6 @@
 
     @media screen and (max-width: $bp-largest) {
       flex: 1;
-      display: flex;
-      justify-content: center;
     }
   }
 
@@ -171,6 +169,11 @@
     gap: 1rem;
     position: relative;
     z-index: 10;
+
+    @media screen and (max-width: $bp-largest) {
+      justify-content: center;
+      padding: 1rem;
+    }
   }
 
   &__legal {
@@ -364,7 +367,7 @@
   position: relative;
   overflow: hidden;
 
-  @media screen and (max-width: $bp-largest) {
+  @media screen and (max-width: $bp-large) {
     padding: 1.5rem;
   }
 

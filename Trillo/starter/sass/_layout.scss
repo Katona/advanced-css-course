@@ -6,6 +6,7 @@
   margin: 8rem auto;
   @media screen and (max-width: $bp-largest) {
     margin: 0;
+    max-width: 100%;
   }
 }
 
@@ -40,7 +41,7 @@
   padding: 4.5rem;
   background-color: transparent;
 
-  @media screen and (max-width: $bp-largest) {
+  @media screen and (max-width: $bp-large) {
     gap: 3rem;
     padding: 3rem;
   }
@@ -50,7 +51,7 @@
     box-shadow: var(--shadow-light);
     flex: 0 0 60%;
     padding: 3rem;
-    @media screen and (max-width: $bp-largest) {
+    @media screen and (max-width: $bp-large) {
       padding: 1.5rem;
     }
   }

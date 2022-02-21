@@ -55,7 +55,11 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 
+  @media screen and (max-width: $bp-medium) {
+     font-size: 55%; 
+  }
 }
+
 
 body {
   font-family: "Open Sans", sans-serif;

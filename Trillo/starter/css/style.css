@@ -42,6 +42,9 @@ Grey dark 3: #999
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media screen and (max-width: 56.25em) {
+    html {
+      font-size: 55%; } }
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -97,6 +100,9 @@ Grey dark 3: #999
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media screen and (max-width: 56.25em) {
+    html {
+      font-size: 55%; } }
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -114,7 +120,8 @@ body {
   margin: 8rem auto; }
   @media screen and (max-width: 75em) {
     .container {
-      margin: 0; } }
+      margin: 0;
+      max-width: 100%; } }
 
 .header {
   height: 7rem; }
@@ -142,7 +149,7 @@ body {
   gap: 4.5rem;
   padding: 4.5rem;
   background-color: transparent; }
-  @media screen and (max-width: 75em) {
+  @media screen and (max-width: 68.65em) {
     .details {
       gap: 3rem;
       padding: 3rem; } }
@@ -151,7 +158,7 @@ body {
     box-shadow: var(--shadow-light);
     flex: 0 0 60%;
     padding: 3rem; }
-    @media screen and (max-width: 75em) {
+    @media screen and (max-width: 68.65em) {
       .details .description {
         padding: 1.5rem; } }
   .details .user-reviews {
@@ -205,6 +212,9 @@ Grey dark 3: #999
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media screen and (max-width: 56.25em) {
+    html {
+      font-size: 55%; } }
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -304,9 +314,7 @@ body {
     padding: 1rem 2rem; }
     @media screen and (max-width: 75em) {
       .side-nav__item {
-        flex: 1;
-        display: flex;
-        justify-content: center; } }
+        flex: 1; } }
   .side-nav__item:not(:last-child) {
     margin-bottom: 0.5rem; }
     @media screen and (max-width: 75em) {
@@ -340,6 +348,10 @@ body {
     gap: 1rem;
     position: relative;
     z-index: 10; }
+    @media screen and (max-width: 75em) {
+      .side-nav__link:link, .side-nav__link:visited {
+        justify-content: center;
+        padding: 1rem; } }
   .side-nav__legal {
     font-size: 1.2rem;
     color: var(--grey-light-4);
@@ -479,7 +491,7 @@ body {
   box-shadow: var(--shadow-light);
   position: relative;
   overflow: hidden; }
-  @media screen and (max-width: 75em) {
+  @media screen and (max-width: 68.65em) {
     .review {
       padding: 1.5rem; } }
   .review__text {
