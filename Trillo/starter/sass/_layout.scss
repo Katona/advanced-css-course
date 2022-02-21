@@ -1,7 +1,12 @@
+@import "./base";
+
 .container {
   max-width: 120rem;
   background-color: #fff;
   margin: 8rem auto;
+  @media screen and (max-width: $bp-largest) {
+    margin: 0;
+  }
 }
 
 .header {
@@ -11,6 +16,9 @@
 .content {
   display: flex;
   align-items: stretch;
+  @media screen and (max-width: $bp-largest) {
+    flex-direction: column;
+  }
 }
 
 .sidebar {
@@ -28,15 +36,23 @@
 
 .details {
   display: flex;
-  gap:4.5rem;
+  gap: 4.5rem;
   padding: 4.5rem;
   background-color: transparent;
+
+  @media screen and (max-width: $bp-largest) {
+    gap: 3rem;
+    padding: 3rem;
+  }
 
   .description {
     font-size: 1.4rem;
     box-shadow: var(--shadow-light);
     flex: 0 0 60%;
     padding: 3rem;
+    @media screen and (max-width: $bp-largest) {
+      padding: 1.5rem;
+    }
   }
 
   .user-reviews {

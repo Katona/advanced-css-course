@@ -1,3 +1,5 @@
+@import "./base";
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -106,14 +108,31 @@
   list-style: none;
   margin-top: 2rem;
 
+  @media screen and (max-width: $bp-largest) {
+    display: flex;
+    margin: 0;
+  }
+
   &__item {
     font-size: 1.4rem;
     position: relative;
     padding: 1rem 2rem;
+
+    @media screen and (max-width: $bp-largest) {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
   }
+
   &__item:not(:last-child) {
     margin-bottom: 0.5rem;
+
+    @media screen and (max-width: $bp-largest) {
+      margin: 0;
+    }
   }
+
   &__item::before {
     content: "";
     width: 3px;
@@ -159,6 +178,10 @@
     color: var(--grey-light-4);
     text-align: center;
     margin-bottom: 2rem;
+
+    @media screen and (max-width: $bp-largest) {
+      display: none;
+    }
   }
 }
 
@@ -320,6 +343,7 @@
 
   &__friends {
     // display: flex;
+    flex-shrink: 0;
   }
   &__photo {
     box-sizing: content-box;
@@ -339,6 +363,10 @@
   box-shadow: var(--shadow-light);
   position: relative;
   overflow: hidden;
+
+  @media screen and (max-width: $bp-largest) {
+    padding: 1.5rem;
+  }
 
   &__text {
     margin-bottom: 2rem;
@@ -415,7 +443,7 @@
     display: inline-block;
     height: 100%;
     width: 100%;
-    transition: all .2s;
+    transition: all 0.2s;
   }
 
   &__visible {
