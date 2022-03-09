@@ -46,6 +46,10 @@
     padding: 3rem;
   }
 
+  @media screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
+
   .description {
     font-size: 1.4rem;
     box-shadow: var(--shadow-light);

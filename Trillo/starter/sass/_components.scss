@@ -2,10 +2,15 @@
 
 .header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   font-size: 1.4rem;
   border-bottom: 1px solid var(--grey-light-2);
+
+  @media screen and (max-width: $bp-small) {
+    height: 11rem;
+  }
 
   .logo {
     height: 3.25rem;
@@ -66,6 +71,13 @@
   padding: 0.5rem 1rem;
   border-radius: 5rem;
   transition: all 0.2s;
+
+  @media screen and (max-width: $bp-small) {
+    order: 1;
+    flex: 0 0 100%;
+    border-radius: 0;
+    padding: 1rem 3rem;
+  }
 
   &:focus-within {
     background-color: var(--grey-light-3);
@@ -175,6 +187,11 @@
       padding: 1rem;
     }
   }
+  &__text {
+    @media screen and (max-width: $bp-small) {
+      display: none;
+    }
+  }
 
   &__legal {
     font-size: 1.2rem;
@@ -220,6 +237,11 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 1.5rem 3rem;
+
+    @media screen and (max-width: $bp-small) {
+      font-size: 1.8rem;
+      padding: 1rem 1rem;
+    }
   }
 
   &__location {
@@ -244,14 +266,26 @@
     align-items: center;
     justify-content: center;
 
+    @media screen and (max-width: $bp-small) {
+      padding: 0rem 0.75rem;
+    }
+
     &-average {
       font-size: 2.25rem;
+
+      @media screen and (max-width: $bp-small) {
+        font-size: 1.8rem;
+      }
     }
 
     &-count {
       margin-top: -0.25rem;
       font-size: 1rem;
       text-transform: uppercase;
+
+      @media screen and (max-width: $bp-small) {
+        font-size: .6rem;
+      }
     }
   }
 }
