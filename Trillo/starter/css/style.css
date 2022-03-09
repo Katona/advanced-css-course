@@ -392,6 +392,9 @@ body {
     margin-right: auto;
     display: flex;
     align-items: center; }
+    @media screen and (max-width: 31.25em) {
+      .overview__stars {
+        display: none; } }
   .overview__icon-star, .overview__icon-location {
     width: 1.75rem;
     height: 1.75rem;
@@ -410,7 +413,8 @@ body {
     font-size: 1.2rem;
     display: flex;
     align-items: center;
-    margin-right: 3rem; }
+    margin-right: 3rem;
+    margin-left: auto; }
   .overview__icon-location {
     margin-right: 0.5rem; }
   .overview__rating {
@@ -425,7 +429,7 @@ body {
     justify-content: center; }
     @media screen and (max-width: 37.5em) {
       .overview__rating {
-        padding: 0rem 0.75rem; } }
+        padding: 0rem 0.5rem; } }
     .overview__rating-average {
       font-size: 2.25rem; }
       @media screen and (max-width: 37.5em) {
@@ -437,7 +441,7 @@ body {
       text-transform: uppercase; }
       @media screen and (max-width: 37.5em) {
         .overview__rating-count {
-          font-size: .6rem; } }
+          font-size: 0.6rem; } }
 
 .btn-inline {
   color: var(--primary);
