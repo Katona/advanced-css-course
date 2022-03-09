@@ -81,7 +81,9 @@
 
   &:focus-within {
     background-color: var(--grey-light-3);
-    flex-basis: 45%;
+    @media screen and (min-width: $bp-small) {
+      flex-basis: 45%;
+    }
   }
 
   &__input {

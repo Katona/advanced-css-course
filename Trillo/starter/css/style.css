@@ -292,8 +292,10 @@ body {
       border-radius: 0;
       padding: 1rem 3rem; } }
   .search:focus-within {
-    background-color: var(--grey-light-3);
-    flex-basis: 45%; }
+    background-color: var(--grey-light-3); }
+    @media screen and (min-width: 37.5em) {
+      .search:focus-within {
+        flex-basis: 45%; } }
   .search__input {
     font-family: inherit;
     font-size: inherit;
