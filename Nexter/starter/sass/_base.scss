@@ -37,4 +37,9 @@ body {
 .container {
     display: grid;
     grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+    grid-template-columns: [sidebar-start] 8rem [sidebar-end start-full] minmax(6rem, 1fr) repeat(8, [col-start] minmax(min-content, 1fr) [col-end]) minmax(6rem, 1fr) [end-full];
+    & > * {
+        font-size: 3rem;
+        padding: 3rem;
+    }
 }
