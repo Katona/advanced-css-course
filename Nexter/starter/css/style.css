@@ -20,6 +20,17 @@ body {
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
+.heading-1, .heading-2, .heading-3, .heading-4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400; }
+
+.heading-4 {
+  font-size: 1.9rem; }
+  .heading-4--light {
+    color: #f9f7f6; }
+  .heading-4--dark {
+    color: #54483A; }
+
 .sidebar {
   background-color: #c69963;
   grid-column: sidebar-start / sidebar-end;
@@ -36,9 +47,25 @@ body {
 .features {
   grid-column: center-start / center-end;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   margin: 20rem 0;
-  gap: 6rem; }
+  gap: 6rem;
+  align-items: start; }
+  .features .feature {
+    display: grid;
+    gap: 1.5rem;
+    align-items: center;
+    grid-template-areas: "icon title" ".    text"; }
+    .features .feature__title {
+      grid-area: title; }
+    .features .feature__icon {
+      grid-area: icon;
+      width: 4.5rem;
+      height: 4.5rem;
+      fill: #c69963; }
+    .features .feature__text {
+      grid-area: text;
+      font-size: 1.7rem; }
 
 .story__pictures {
   background-color: #c69963;
