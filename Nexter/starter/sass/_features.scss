@@ -1,7 +1,7 @@
 .features {
   grid-column: center-start / center-end;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   margin: 20rem 0;
   gap: 6rem;
   align-items: start;
@@ -10,10 +10,12 @@
     display: grid;
     gap: 1.5rem;
     align-items: center;
+    justify-items: start;
 
     grid-template-areas:
       "icon title"
       ".    text";
+    grid-template-columns: min-content 1fr;
 
     &__title {
       grid-area: title;

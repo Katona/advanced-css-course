@@ -18,11 +18,25 @@ body {
 .container {
   display: grid;
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
-  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 20rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
 .heading-1, .heading-2, .heading-3, .heading-4 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400; }
+
+.heading-2 {
+  font-size: 4rem;
+  font-style: italic;
+  line-height: 1; }
+  .heading-2--dark {
+    color: #54483A; }
+  .heading-2--light {
+    color: #f9f7f6; }
+
+.heading-3 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #c69963; }
 
 .heading-4 {
   font-size: 1.9rem; }
@@ -30,6 +44,32 @@ body {
     color: #f9f7f6; }
   .heading-4--dark {
     color: #54483A; }
+
+.btn {
+  background-color: #c69963;
+  color: white;
+  border-radius: 0;
+  border: none;
+  padding: 1.8rem 3rem;
+  cursor: pointer;
+  transition: all .2s;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-family: "Josefin Sans", sans-serif; }
+  .btn:hover {
+    background-color: #B28451; }
+
+.mb-sm {
+  margin-bottom: 2rem; }
+
+.mb-md {
+  margin-bottom: 3rem; }
+
+.mb-lg {
+  margin-bottom: 4rem; }
+
+.mb-xl {
+  margin-bottom: 8rem; }
 
 .sidebar {
   background-color: #c69963;
@@ -47,7 +87,7 @@ body {
 .features {
   grid-column: center-start / center-end;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   margin: 20rem 0;
   gap: 6rem;
   align-items: start; }
@@ -55,7 +95,9 @@ body {
     display: grid;
     gap: 1.5rem;
     align-items: center;
-    grid-template-areas: "icon title" ".    text"; }
+    justify-items: start;
+    grid-template-areas: "icon title" ".    text";
+    grid-template-columns: min-content 1fr; }
     .features .feature__title {
       grid-area: title; }
     .features .feature__icon {
@@ -72,8 +114,17 @@ body {
   grid-column: center-start / col-end 4; }
 
 .story__content {
+  padding: 6rem 8vw;
   background-color: #f9f7f6;
-  grid-column: col-start 5 / center-end; }
+  grid-column: col-start 5 / center-end;
+  display: grid;
+  align-content: center;
+  justify-items: start; }
+
+.story__text {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 4rem; }
 
 .homes {
   background-color: #101d2c;
