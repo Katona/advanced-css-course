@@ -111,7 +111,24 @@ body {
 
 .story__pictures {
   background-color: #c69963;
-  grid-column: center-start / col-end 4; }
+  background-image: linear-gradient(rgba(198, 153, 99, 0.4), rgba(178, 132, 81, 0.4)), url(../img/back.jpg);
+  grid-column: center-start / col-end 4;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  align-items: center; }
+
+.story__img-1 {
+  width: 100%;
+  grid-column: 2 / 6;
+  grid-row: 2 / 6; }
+
+.story__img-2 {
+  width: 115%;
+  z-index: 20;
+  grid-column: 4 / -1;
+  grid-row: 3 / -1;
+  box-shadow: 0rem 1rem 4rem rgba(0, 0, 0, 0.2); }
 
 .story__content {
   padding: 6rem 8vw;

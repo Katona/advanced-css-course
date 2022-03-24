@@ -1,8 +1,28 @@
 .story {
     &__pictures {
         background-color: $color-primary;
+        background-image: 
+            linear-gradient(rgba($color-primary, .4), rgba($color-primary-dark, .4)),
+            url(../img/back.jpg);
         grid-column: center-start / col-end 4;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        align-items: center;
     }
+    &__img-1 {
+        width: 100%;
+        grid-column: 2 / 6;
+        grid-row: 2 / 6;
+    }
+    &__img-2 {
+        width: 115%;
+        z-index: 20;
+        grid-column: 4 / -1;
+        grid-row: 3 / -1;
+        box-shadow: 0rem 1rem 4rem rgba(#000, .2);
+    }
+
     &__content {
         padding: 6rem 8vw;
         background-color: $color-grey-light-1;
