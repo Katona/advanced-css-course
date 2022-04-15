@@ -250,4 +250,29 @@ body {
 
 .footer {
   background-color: #101d2c;
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  padding: 5rem; }
+  .footer .nav {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    font-size: 2rem; }
+    .footer .nav__item {
+      padding: 1.5rem;
+      transition: all 0.2s; }
+    .footer .nav__item:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+      transform: translateY(-3px); }
+    .footer .nav__link, .footer .nav__link:visited {
+      text-transform: uppercase;
+      color: #f9f7f6;
+      text-decoration: none;
+      font-family: "Josefin Sans", sans-serif;
+      text-align: center;
+      display: block; }
+  .footer .copyright {
+    width: 70%;
+    font-size: 2rem;
+    color: #aaa;
+    margin: 5rem auto;
+    text-align: center; }
