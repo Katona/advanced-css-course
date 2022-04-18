@@ -1,6 +1,33 @@
 .sidebar {
-    background-color: $color-primary;
-    
-    grid-column: sidebar-start / sidebar-end;
-    grid-row: 1 / -1;
+  background-color: $color-primary;
+
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1 / -1;
+  display: flex;
+  justify-content: center;
+
+  .btn-nav {
+    border-radius: 0;
+    border: none;
+    height: 2px;
+    width: 4.5rem;
+    background-color: $color-grey-light-1;
+    margin-top: 4rem;
+
+    &::after,
+    &::before {
+      content: "";
+      height: 2px;
+      width: 4.5rem;
+      background-color: $color-grey-light-1;
+      display: block;
+    }
+
+    &::after {
+      transform: translateY(1.3rem);
+    }
+    &::before {
+      transform: translateY(-1.5rem);
+    }
+  }
 }
