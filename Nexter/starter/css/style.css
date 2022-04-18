@@ -24,6 +24,11 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400; }
 
+.heading-1 {
+  font-size: 4.5rem;
+  line-height: 1;
+  color: #f9f7f6; }
+
 .heading-2 {
   font-size: 4rem;
   font-style: italic;
@@ -96,8 +101,44 @@ body {
       transform: translateY(-1.5rem); }
 
 .header {
-  background-color: #54483A;
-  grid-column: full-start / col-end 6; }
+  background: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url(../img/hero.jpeg);
+  background-size: cover;
+  background-position: center;
+  grid-column: full-start / col-end 6;
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: 1fr min-content 8rem 1fr;
+  padding: 8rem;
+  padding-top: 4rem;
+  justify-content: center; }
+  .header__logo {
+    justify-self: center;
+    height: 3rem;
+    margin-bottom: auto; }
+  .header__btn {
+    align-self: start;
+    justify-self: start; }
+  .header__seenon-text {
+    font-size: 2.5rem;
+    color: #aaa;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    align-items: center;
+    gap: 2rem; }
+    .header__seenon-text::before, .header__seenon-text::after {
+      height: 1px;
+      content: "";
+      display: block;
+      background-color: color-grey-light-2; }
+  .header__seenon-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+    align-items: center;
+    justify-items: center; }
+    .header__seenon-logos > img {
+      height: 2.5rem;
+      opacity: 0.5; }
 
 .realtors {
   background-color: #101d2c;
