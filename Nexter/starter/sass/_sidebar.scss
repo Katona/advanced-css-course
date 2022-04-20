@@ -6,6 +6,13 @@
   display: flex;
   justify-content: center;
 
+  @media screen and (max-width: $bp-large) {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    justify-content: end;
+    align-items: center;
+  }
+
   .btn-nav {
     border-radius: 0;
     border: none;
@@ -13,6 +20,11 @@
     width: 4.5rem;
     background-color: $color-grey-light-1;
     margin-top: 4rem;
+
+    @media screen and (max-width: $bp-large) {
+      margin-top: 0;
+      margin-right: 3rem;
+    }
 
     &::after,
     &::before {
