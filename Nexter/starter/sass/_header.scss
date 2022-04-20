@@ -7,7 +7,7 @@
   grid-column: full-start / col-end 6;
   display: grid;
   gap: 1rem;
-  grid-template-rows: 1fr min-content 8rem 1fr;
+  grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
   padding: 8rem;
   padding-top: 4rem;
   justify-content: center;
@@ -47,7 +47,8 @@
     justify-items: center;
 
     & > img {
-      height: 2.5rem;
+      max-height: 2.5rem;
+      max-width: 100%;
       opacity: 0.5;
     }
   }
