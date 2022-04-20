@@ -25,6 +25,10 @@
     @media screen and (max-width: $bp-medium) {
       grid-template-columns: repeat(6, max-content);
     }
+
+    @media screen and (max-width: $bp-small) {
+      grid-template-columns: max-content max-content;
+    }
   }
 
   &__img {

@@ -16,6 +16,10 @@
     grid-column: 1 / -1;
   }
 
+  @media screen and (max-width: $bp-small) {
+    padding: 5rem;
+  }
+
   &__logo {
     justify-self: center;
     height: 3rem;
